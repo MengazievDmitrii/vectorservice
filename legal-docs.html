@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Правовые документы</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <nav class="top-nav" aria-label="Главное меню">
+                <a href="index.html">Главная</a>
+                <a href="privacy-policy.html">Политика</a>
+            </nav>
+
+            <div class="logo" aria-label="Логотип компании">
+                <img src="logo.png" alt="Логотип компании">
+            </div>
+
+            <a class="header-phone" href="tel:+79174418735">+7 (917) 441-87-35</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section legal-docs">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Правовые документы</h2>
+                </div>
+
+                <div class="legal-article">
+                    <p>Ниже представлены основные документы, регулирующие обработку персональных данных, cookie и взаимодействие с пользователем на сайте ООО «Вектор-Сервис».</p>
+
+                    <div class="legal-doc-group">
+                        <h3><a href="privacy-policy.html">Политика обработки персональных данных</a></h3>
+                        <p>Порядок сбора, хранения, использования и уничтожения персональных данных, а также права пользователя.</p>
+                    </div>
+
+                    <div class="legal-doc-group">
+                        <h3>Согласие на обработку персональных данных</h3>
+                        <p>Пользователь может дать согласие на обработку своих персональных данных в форме заявки. Согласие является добровольным, а его отзыв возможен в любой момент.</p>
+                    </div>
+
+                    <div class="legal-doc-group" id="cookie">
+                        <h3>Уведомление о cookie</h3>
+                        <p>Сайт использует cookie-файлы для обеспечения корректной работы, поддержки безопасности и, при необходимости, аналитики. Мы используем обязательные cookie, а также, по необходимости, дополнительные файлы. Пользователь может выбрать только обязательные cookie.</p>
+                    </div>
+
+                    <div class="legal-doc-group">
+                        <h3>Реквизиты</h3>
+                        <p>ООО «Вектор-Сервис»<br>
+                        Юридический адрес: 450059, Республика Башкортостан, г. Уфа, ул. Рихарда Зорге, д. 30, кв. 22<br>
+                        Телефон: +7 (917) 441-87-35<br>
+                        E-mail: Serezha.isaev.1999@list.ru<br>
+                        ИНН: 0275036040<br>
+                        КПП: 027801001<br>
+                        ОГРН: 1030204114269</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-legal">
+            <span>© <span id="currentYear"></span> Вектор Сервис. Все права защищены.</span>
+            <div class="footer-links">
+                <a href="index.html">Главная</a>
+                <a href="privacy-policy.html">Политика</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const currentYear = new Date().getFullYear();
+        const currentYearEl = document.getElementById('currentYear');
+        if (currentYearEl) {
+            currentYearEl.textContent = currentYear;
+        }
+    </script>
+</body>
+</html>

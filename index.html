@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вектор Сервис</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="cookie-banner" id="cookieBanner" aria-live="polite">
+        <div class="container cookie-inner">
+            <div class="cookie-copy">
+                <strong>Используем cookie</strong>
+                <p>Мы используем необходимые cookie для корректной работы сайта и, при необходимости, аналитические cookies. Подробнее в <a href="privacy-policy.html">Политике обработки персональных данных</a>.</p>
+            </div>
+            <div class="cookie-actions">
+                <button type="button" class="btn btn-small" id="cookieAccept">Принять все</button>
+                <button type="button" class="btn secondary btn-small" id="cookieOnlyEssential">Только обязательные</button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container header-inner">
+            <nav class="top-nav" aria-label="Главное меню">
+                <a href="#services">Услуги</a>
+                <a href="#about">О нас</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <div>
+                <nav class="top-nav-test" aria-label="Тестовая запись">
+                    <a>Тестовая запсь</a>
+                </nav>
+            </div>
+            <div class="logo" aria-label="Логотип компании">
+                <img src="logo.png" alt="Логотип компании">
+            </div>
+
+            <a class="header-phone" href="tel:+73472249303">+7 (347) 224-93-03</a>
+
+            <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="mobile-nav" id="mobileNav" aria-label="Мобильное меню">
+            <a href="#services">Услуги</a>
+            <a href="#about">О нас</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <div class="hero-badge">Юридическая защита</div>
+                    <h1>Ваши права<br>под защитой.</h1>
+                    <p>Консультации и сопровождение по сложным юридическим вопросам.</p>
+
+                    <div class="hero-actions">
+                        <a href="#contacts" class="btn">Получить консультацию</a>
+                        <a href="https://wa.me/79930625011" target="_blank" class="btn secondary">WhatsApp</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-box">
+                            <strong>1500+</strong>
+                            <span>клиентов</span>
+                        </div>
+                        <div class="stat-box">
+                            <strong>94%</strong>
+                            <span>рекомендаций</span>
+                        </div>
+                        <div class="stat-box">
+                            <strong>24/7</strong>
+                            <span>связь</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="visual-card">
+                        <div class="visual-top">
+                            <div class="logo-mark">V</div>
+                            <div class="visual-badge">Безопасно</div>
+                        </div>
+                        <h3>Решаем сложные вопросы</h3>
+                        <p>От выплаты по ранению до защиты прав при оспаривании решений и других юридических спорах.</p>
+
+                        <div class="mini-list">
+                            <div class="mini-item"><span class="dot"></span> Выплаты и компенсации</div>
+                            <div class="mini-item"><span class="dot"></span> Поддержка мобилизованных</div>
+                            <div class="mini-item"><span class="dot"></span> Правовая защита семей</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Наши услуги</h2>
+                    <p>Комплексная юридическая помощь в вопросах, где важно действовать быстро и грамотно.</p>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <div class="icon">⚖️</div>
+                        <h3>Выплаты и компенсации</h3>
+                        <p>Помощь в оформлении и получении выплат за ранение, травму и иные права.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🛡️</div>
+                        <h3>Помощь мобилизованным</h3>
+                        <p>Поддержка по вопросам прав, документов, поддержки семей и правовой безопасности.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">📑</div>
+                        <h3>Оспаривание ВВК</h3>
+                        <p>Подготовка и сопровождение при разбирательствах с решениями медицинских комиссий.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🔎</div>
+                        <h3>Поиск пропавших</h3>
+                        <p>Юридическая сопровождение в сложных ситуациях, когда важно быстро принимать решения.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">👨‍👩‍👧</div>
+                        <h3>Помощь семьям погибших</h3>
+                        <p>Поддержка в вопросах оформления прав, компенсаций и защиты интересов семьи.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">💼</div>
+                        <h3>Банкротство и долги</h3>
+                        <p>Консультации по долговым вопросам и защите от незаконных требований.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section alt" id="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Почему выбирают нас</h2>
+                    <p>Наша работа строится на внимании к человеку, глубокой экспертизе и ответственности.</p>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <div class="icon">✅</div>
+                        <h3>Индивидуальный подход</h3>
+                        <p>Каждое дело рассматривается в контексте конкретной ситуации и целей клиента.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🔒</div>
+                        <h3>Конфиденциальность</h3>
+                        <p>Мы защищаем вашу личную информацию и ведём работу с пониманием деликатности вопроса.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🚀</div>
+                        <h3>Быстрая реакция</h3>
+                        <p>Своевременная оценка ситуации помогает не упустить важные сроки и принять правильные решения.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">💬</div>
+                        <h3>Понятные решения</h3>
+                        <p>Мы объясняем все шаги простым языком, чтобы вы всегда понимали, что происходит.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Как мы работаем</h2>
+                    <p>Прозрачный и понятный процесс, который помогает быстро сориентироваться и начать действовать.</p>
+                </div>
+
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">01</div>
+                        <h3>Оставляете заявку</h3>
+                        <p>Вы связываетесь с нами удобным способом, и мы понимаем, в каком направлении вам нужна поддержка.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">02</div>
+                        <h3>Консультируем</h3>
+                        <p>Юрист оценивает вашу ситуацию и объясняет возможные варианты решения без лишней сложности.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">03</div>
+                        <h3>Формируем план</h3>
+                        <p>Определяем оптимальную стратегию, документы и шаги, которые нужно предпринять.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">04</div>
+                        <h3>Защищаем интересы</h3>
+                        <p>Проводим сопровождение и помогаем добиться результата на практике.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section alt" id="reviews">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Отзывы клиентов</h2>
+                    <p>Люди ценят честную консультацию, спокойствие и реальный результат.</p>
+                </div>
+
+                <div class="cards">
+                    <div class="card review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“Поблагодарил команду за детальную консультацию и грамотную помощь. Всё объяснили спокойно и по существу.”</p>
+                        <strong>Александр П.</strong>
+                    </div>
+                    <div class="card review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“Действительно помогли разобраться в ситуации с выплатами и определиться с дальнейшими шагами без паники.”</p>
+                        <strong>Елена К.</strong>
+                    </div>
+                    <div class="card review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>“Спасибо за профессиональный подход. С первых минут стало понятно, что дело ведут внимательно и грамотно.”</p>
+                        <strong>Игорь С.</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="faq">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Частые вопросы</h2>
+                    <p>Ответы на самые популярные вопросы, которые помогают быстрее принять решение.</p>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>Сколько стоит первичная консультация?</h3>
+                        <p>Первичная консультация проводится бесплатно. После оценки ситуации мы обсудим, какие шаги будут наиболее эффективными.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Можно ли получить помощь дистанционно?</h3>
+                        <p>Да, консультирование и часть работы можно вести онлайн — по телефону, в мессенджере или через очную встречу.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Что делать, если отказали в выплате?</h3>
+                        <p>Не откладывайте. Важно проверить основания отказа, собрать документы и оценить, какие действия дадут наибольший эффект.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Можно ли обратиться, если дело срочное?</h3>
+                        <p>Да. Мы готовы рассматривать срочные обращения и оперативно выстраивать план действий в ближайшие часы.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section alt" id="contacts">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Контакты</h2>
+                    <p>Свяжитесь с нами удобным способом и получите квалифицированную консультацию.</p>
+                </div>
+
+                <div class="contact-wrap">
+                    <div class="contact-panel">
+                        <h3>Напишите нам</h3>
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div>
+                                    <strong>Телефон</strong>
+                                    <a href="tel:+73472249303">+7 (347) 224-93-03</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">💬</div>
+                                <div>
+                                    <strong>WhatsApp</strong>
+                                    <a href="https://wa.me/79930625011" target="_blank">Написать в WhatsApp</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">🟦</div>
+                                <div>
+                                    <strong>VK</strong>
+                                    <a href="https://vk.com" target="_blank">Перейти в сообщество</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <strong>Расположение</strong>
+                                    <span>Нефтекамск, Республика Башкортостан</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-panel">
+                        <h3>Оставить заявку</h3>
+                        <p>Опишите вашу ситуацию, и мы подскажем, что лучше сделать дальше.</p>
+
+                        <form class="contact-form" id="vkForm">
+                            <div class="form-row">
+                                <div class="field">
+                                    <label for="name">Ваше имя</label>
+                                    <input id="name" type="text" name="name" placeholder="Введите имя" required>
+                                </div>
+                                <div class="field">
+                                    <label for="phone">Телефон</label>
+                                    <input id="phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="service">Услуга</label>
+                                <select id="service" name="service">
+                                    <option value="Выплаты и компенсации">Выплаты и компенсации</option>
+                                    <option value="Помощь мобилизованным">Помощь мобилизованным</option>
+                                    <option value="Оспаривание ВВК">Оспаривание ВВК</option>
+                                    <option value="Проблемы с документами">Проблемы с документами</option>
+                                    <option value="Долги и банкротство">Долги и банкротство</option>
+                                    <option value="Другое">Другое</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="message">Опишите ситуацию</label>
+                                <textarea id="message" name="message" placeholder="Напишите, в чём нужна помощь"></textarea>
+                            </div>
+
+                            <div class="field checkbox-field">
+                                <label class="checkbox-row" for="consent">
+                                    <input id="consent" type="checkbox" name="consent" required>
+                                    <span>Согласен на обработку персональных данных и ознакомлен с <a href="privacy-policy.html">Политикой обработки персональных данных</a>.</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn">Отправить заявку в VK</button>
+                            <div class="form-status" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container cta-inner">
+                <h2>Бесплатная консультация</h2>
+                <p>Опишите вашу ситуацию — мы подскажем, какие шаги лучше предпринять уже сегодня.</p>
+                <a href="#contacts" class="btn">Оставить заявку</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-legal">
+            <span>© <span id="currentYear"></span> Вектор Сервис. Все права защищены.</span>
+            <div class="footer-links">
+                <a href="privacy-policy.html">Политика</a>
+                <a href="legal-docs.html">Правовые документы</a>
+                <a href="legal-docs.html#cookie">Cookie</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/79930625011" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">💬</a>
+
+    <script>
+        const startYearEl = document.getElementById('startYear');
+        const currentYearEl = document.getElementById('currentYear');
+        const currentYear = new Date().getFullYear();
+
+        if (currentYearEl) {
+            currentYearEl.textContent = currentYear;
+        }
+
+        if (startYearEl && Number(startYearEl.textContent) > currentYear) {
+            startYearEl.textContent = currentYear;
+        }
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileNav = document.getElementById('mobileNav');
+
+        if (menuToggle && mobileNav) {
+            menuToggle.addEventListener('click', function () {
+                const isOpen = mobileNav.classList.toggle('open');
+                menuToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            mobileNav.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    mobileNav.classList.remove('open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        const form = document.getElementById('vkForm');
+        const statusEl = document.querySelector('.form-status');
+
+        const VK_GROUP_ID = 'felicitationyoutube';
+
+        const cookieBanner = document.getElementById('cookieBanner');
+        const cookieAccept = document.getElementById('cookieAccept');
+        const cookieOnlyEssential = document.getElementById('cookieOnlyEssential');
+
+        const setCookieConsent = function (value) {
+            localStorage.setItem('cookieConsent', value);
+            if (cookieBanner) {
+                cookieBanner.classList.add('hidden');
+            }
+        };
+
+        if (localStorage.getItem('cookieConsent')) {
+            if (cookieBanner) {
+                cookieBanner.classList.add('hidden');
+            }
+        }
+
+        if (cookieAccept) {
+            cookieAccept.addEventListener('click', function () {
+                setCookieConsent('all');
+            });
+        }
+
+        if (cookieOnlyEssential) {
+            cookieOnlyEssential.addEventListener('click', function () {
+                setCookieConsent('essential');
+            });
+        }
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value.trim();
+            const consent = document.getElementById('consent');
+
+            if (!name || !phone) {
+                statusEl.textContent = 'Укажите имя и телефон.';
+                statusEl.style.color = '#d96b6b';
+                return;
+            }
+
+            if (!consent || !consent.checked) {
+                statusEl.textContent = 'Необходимо дать согласие на обработку персональных данных.';
+                statusEl.style.color = '#d96b6b';
+                return;
+            }
+
+            const text = [
+                'Новая заявка с сайта',
+                'Имя: ' + name,
+                'Телефон: ' + phone,
+                'Услуга: ' + service,
+                'Ситуация: ' + (message || 'Не указана')
+            ].join('\n');
+
+            const vkUrl = `https://vk.com/${VK_GROUP_ID}?act=write&msg=${encodeURIComponent(text)}`;
+
+            window.open(vkUrl, '_blank');
+            statusEl.textContent = 'Заявка открыта в VK. Отправьте сообщение, чтобы завершить оформление.';
+            statusEl.style.color = '#1bbf7a';
+            form.reset();
+        });
+    </script>
+</body>
+</html>
