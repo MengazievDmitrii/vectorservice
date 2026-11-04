@@ -309,28 +309,29 @@
                         <h3>Оставить заявку</h3>
                         <p>Опишите вашу ситуацию, и мы подскажем, что лучше сделать дальше.</p>
 
-                      <form class="contact-form" id="contactForm" action="https://formsubmit.co/mengazievdima@xmail.ru" method="POST">
-    <!-- Служебные поля FormSubmit -->
-    <input type="hidden" name="_subject" value="Новая заявка с сайта Вектор Сервис">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://vectorservice.vercel.app/?sent=1#contacts">
-    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                   <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+    
+    <!-- Ключ Web3Forms (вставьте свой) -->
+    <input type="hidden" name="access_key" value="80088c84-5934-4bca-9bf2-da45bd703e8e">
+    
+    <input type="hidden" name="subject" value="Новая заявка с сайта Вектор Сервис">
+    <input type="hidden" name="from_name" value="Сайт Вектор Сервис">
+    <input type="hidden" name="redirect" value="https://vectorservice.vercel.app/?sent=1#contacts">
 
     <div class="form-row">
         <div class="field">
             <label for="name">Ваше имя</label>
-            <input id="name" type="text" name="Имя" placeholder="Введите имя" required autocomplete="name">
+            <input id="name" type="text" name="name" placeholder="Введите имя" required>
         </div>
         <div class="field">
             <label for="phone">Телефон</label>
-            <input id="phone" type="tel" name="Телефон" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
+            <input id="phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
         </div>
     </div>
 
     <div class="field">
         <label for="service">Услуга</label>
-        <select id="service" name="Услуга">
+        <select id="service" name="service">
             <option value="Выплаты и компенсации">Выплаты и компенсации</option>
             <option value="Помощь мобилизованным">Помощь мобилизованным</option>
             <option value="Оспаривание ВВК">Оспаривание ВВК</option>
@@ -343,12 +344,12 @@
 
     <div class="field">
         <label for="message">Опишите ситуацию</label>
-        <textarea id="message" name="Ситуация" placeholder="Напишите, в чём нужна помощь" rows="4"></textarea>
+        <textarea id="message" name="message" placeholder="Напишите, в чём нужна помощь" rows="4"></textarea>
     </div>
 
     <div class="field checkbox-field">
         <label class="checkbox-row" for="consent">
-            <input id="consent" type="checkbox" name="Согласие" value="Да" required>
+            <input id="consent" type="checkbox" name="consent" value="Да" required>
             <span>Согласен на обработку персональных данных и ознакомлен с <a href="privacy-policy.html">Политикой обработки персональных данных</a>.</span>
         </label>
     </div>
