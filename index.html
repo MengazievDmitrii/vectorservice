@@ -438,6 +438,7 @@
         }
 
         let submissionInProgress = false;
+        let submissionTimeout = null;
 
         if (form && statusEl && submitButton && formTarget) {
             form.addEventListener('submit', function (event) {
@@ -489,12 +490,21 @@
                 statusEl.style.color = '#5a6779';
                 form.submit();
                 hiddenPayload.remove();
+                submissionTimeout = window.setTimeout(function () {
+                    if (!submissionInProgress) return;
+                    submissionInProgress = false;
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Отправить заявку';
+                    statusEl.textContent = 'Не удалось подтвердить сохранение заявки. Позвоните нам: +7 (993) 055-85-69.';
+                    statusEl.style.color = '#d96b6b';
+                }, 20000);
             });
 
             window.addEventListener('message', function (event) {
                 if (event.source !== formTarget.contentWindow || !event.data || event.data.type !== 'vector-service-lead') return;
 
                 submissionInProgress = false;
+                if (submissionTimeout) window.clearTimeout(submissionTimeout);
                 submitButton.disabled = false;
                 submitButton.textContent = 'Отправить заявку';
 
