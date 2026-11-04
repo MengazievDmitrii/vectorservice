@@ -31,11 +31,7 @@
                 <a href="#about">О нас</a>
                 <a href="#contacts">Контакты</a>
             </nav>
-            <div>
-                <nav class="top-nav-test" aria-label="Тестовая запись">
-                    <a>Тестовый запуск</a>
-                </nav>
-            </div>
+            
             <div class="logo" aria-label="Логотип компании">
                 <img src="logo.png" alt="Логотип компании">
             </div>
@@ -68,21 +64,21 @@
 
                     <div class="hero-actions">
                         <a href="#contacts" class="btn">Получить консультацию</a>
-                        <a href="https://wa.me/79930625011" target="_blank" class="btn secondary">WhatsApp</a>
+                        <a href="https://wa.me/79930558569" target="_blank" class="btn secondary">WhatsApp</a>
                     </div>
 
                     <div class="hero-stats">
                         <div class="stat-box">
-                            <strong>1500+</strong>
-                            <span>клиентов</span>
+                            <strong>Вся РФ</strong>
+                            <span>дистанционная помощь</span>
                         </div>
                         <div class="stat-box">
-                            <strong>94%</strong>
-                            <span>рекомендаций</span>
+                            <strong>Бесплатно</strong>
+                            <span>первичная консультация</span>
                         </div>
                         <div class="stat-box">
-                            <strong>24/7</strong>
-                            <span>связь</span>
+                            <strong>Выходные</strong>
+                            <span>тоже на связи</span>
                         </div>
                     </div>
                 </div>
@@ -286,10 +282,17 @@
                                 </div>
                             </div>
                             <div class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <div>
+                                    <strong>Дополнительный телефон</strong>
+                                    <a href="tel:+79930558569">+7 (993) 055-85-69</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
                                 <div class="contact-icon">💬</div>
                                 <div>
                                     <strong>WhatsApp</strong>
-                                    <a href="https://wa.me/79930625011" target="_blank">Написать в WhatsApp</a>
+                                    <a href="https://wa.me/79930558569" target="_blank">Написать в WhatsApp</a>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -349,7 +352,7 @@
                                 </label>
                             </div>
 
-                            <button type="submit" class="btn">Отправить заявку в VK</button>
+                            <button type="submit" class="btn">Подготовить заявку в WhatsApp</button>
                             <div class="form-status" aria-live="polite"></div>
                         </form>
                     </div>
@@ -378,7 +381,7 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/79930625011" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">💬</a>
+    <a href="https://wa.me/79930558569" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">💬</a>
 
     <script>
         const startYearEl = document.getElementById('startYear');
@@ -413,7 +416,7 @@
         const form = document.getElementById('vkForm');
         const statusEl = document.querySelector('.form-status');
 
-        const VK_GROUP_ID = 'felicitationyoutube';
+        const WHATSAPP_NUMBER = '79930558569';
 
         const cookieBanner = document.getElementById('cookieBanner');
         const cookieAccept = document.getElementById('cookieAccept');
@@ -473,10 +476,10 @@
                 'Ситуация: ' + (message || 'Не указана')
             ].join('\n');
 
-            const vkUrl = `https://vk.com/${VK_GROUP_ID}?act=write&msg=${encodeURIComponent(text)}`;
+            const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
 
-            window.open(vkUrl, '_blank');
-            statusEl.textContent = 'Заявка открыта в VK. Отправьте сообщение, чтобы завершить оформление.';
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+            statusEl.textContent = 'Открылся WhatsApp с подготовленным сообщением. Проверьте текст и нажмите «Отправить».';
             statusEl.style.color = '#1bbf7a';
             form.reset();
         });
