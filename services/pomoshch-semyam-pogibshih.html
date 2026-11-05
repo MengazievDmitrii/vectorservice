@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Помощь семьям погибших военнослужащих — Вектор Сервис</title>
+    <meta name="description" content="Поддержка семей погибших военнослужащих в вопросах оформления прав, компенсаций и защиты интересов.">
+    <link rel="canonical" href="https://vectorservice.vercel.app/services/pomoshch-semyam-pogibshih.html">
+    <meta property="og:title" content="Помощь семьям погибших — Вектор Сервис">
+    <meta property="og:description" content="Оформление прав, компенсаций и защита интересов семьи.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vectorservice.vercel.app/services/pomoshch-semyam-pogibshih.html">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="icon" type="image/png" href="../logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <nav class="top-nav" aria-label="Главное меню">
+                <a href="../index.html">Главная</a>
+                <a href="../index.html#services">Услуги</a>
+                <a href="../index.html#contacts">Контакты</a>
+            </nav>
+            <div class="logo"><a href="../index.html"><img src="../logo.png" alt="Вектор Сервис"></a></div>
+            <a class="header-phone" href="tel:+73472249303">+7 (347) 224-93-03</a>
+            <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+        <nav class="mobile-nav" id="mobileNav" aria-label="Мобильное меню">
+            <a href="../index.html">Главная</a>
+            <a href="../index.html#services">Услуги</a>
+            <a href="../index.html#contacts">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h1>Помощь семьям погибших</h1>
+                    <p>Поддержка в вопросах оформления прав, компенсаций и защиты интересов семьи.</p>
+                </div>
+                <div class="legal-article">
+                    <h2 style="margin-top:0;">О направлении</h2>
+                    <p>Семьи погибших военнослужащих имеют право на предусмотренные законом выплаты и меры поддержки. Мы помогаем разобраться в документах, порядке обращения и сопроводить процесс.</p>
+                    <h2>Как обратиться</h2>
+                    <p>Оставьте заявку или свяжитесь по телефону / WhatsApp. Первичная консультация бесплатна.</p>
+                </div>
+                <div style="text-align:center;margin-top:28px;">
+                    <a href="../index.html#contacts" class="btn">Получить консультацию</a>
+                    <a href="https://wa.me/79930625011" target="_blank" rel="noopener" class="btn secondary" style="margin-left:12px;">WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-legal">
+            <span>© <span id="currentYear"></span> Вектор Сервис. Все права защищены.</span>
+            <div class="footer-links"><a href="../privacy-policy.html">Политика</a><a href="../legal-docs.html">Правовые документы</a></div>
+        </div>
+    </footer>
+    <a href="https://wa.me/79930625011" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        const t = document.querySelector('.menu-toggle'), n = document.getElementById('mobileNav');
+        if (t && n) t.addEventListener('click', () => { const o = n.classList.toggle('open'); t.setAttribute('aria-expanded', String(o)); });
+    </script>
+</body>
+</html>
