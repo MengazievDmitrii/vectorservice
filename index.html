@@ -248,42 +248,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-panel">
-                        <h3>Оставить заявку</h3>
-                        <p>Опишите вашу ситуацию, и мы подскажем, что лучше сделать дальше.</p>
-                        <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                            <input type="hidden" name="access_key" value="80088c84-5934-4bca-9bf2-da45bd703e8e">
-                            <input type="hidden" name="subject" value="Новая заявка с сайта Вектор Сервис">
-                            <input type="hidden" name="from_name" value="Сайт Вектор Сервис">
-                            <input type="hidden" name="redirect" value="https://vectorservice.vercel.app/?sent=1#contacts">
-                            <input type="checkbox" name="botcheck" id="botcheck" style="display:none" tabindex="-1" autocomplete="off">
-                            <div class="form-row">
-                                <div class="field"><label for="name">Ваше имя</label><input id="name" type="text" name="name" placeholder="Введите имя" required autocomplete="name"></div>
-                                <div class="field"><label for="phone">Телефон</label><input id="phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required autocomplete="tel"></div>
-                            </div>
-                            <div class="field">
-                                <label for="service">Услуга</label>
-                                <select id="service" name="service">
-                                    <option value="Выплаты и компенсации">Выплаты и компенсации</option>
-                                    <option value="Помощь мобилизованным">Помощь мобилизованным</option>
-                                    <option value="Оспаривание ВВК">Оспаривание ВВК</option>
-                                    <option value="Поиск пропавших">Поиск пропавших</option>
-                                    <option value="Помощь семьям погибших">Помощь семьям погибших</option>
-                                    <option value="Банкротство и долги">Банкротство и долги</option>
-                                    <option value="Другое">Другое</option>
-                                </select>
-                            </div>
-                            <div class="field"><label for="message">Опишите ситуацию</label><textarea id="message" name="message" placeholder="Напишите, в чём нужна помощь" rows="4"></textarea></div>
-                            <div class="field checkbox-field">
-                                <label class="checkbox-row" for="consent">
-                                    <input id="consent" type="checkbox" name="consent" value="Да" required>
-                                    <span>Согласен на обработку персональных данных и ознакомлен с <a href="privacy-policy.html">Политикой обработки персональных данных</a>.</span>
-                                </label>
-                            </div>
-                            <button type="submit" class="btn" id="submitBtn">Отправить заявку</button>
-                            <div class="form-status" id="formStatus" aria-live="polite"></div>
-                        </form>
-                    </div>
+                   <div class="form-panel">
+    <h3>Оставить заявку</h3>
+    <p>Опишите вашу ситуацию, и мы подскажем, что лучше сделать дальше.</p>
+
+    <script src="https://forms.yandex.ru/_static/embed.js"></script>
+    <iframe 
+        src="https://forms.yandex.ru/cloud/6aec9d3795add5619d3cfd38?iframe=1" 
+        frameborder="0" 
+        name="ya-form-6aec9d3795add5619d3cfd38" 
+        width="100%" 
+        height="620"
+        style="border: none; border-radius: 16px; min-height: 560px; max-width: 100%;">
+    </iframe>
+</div>
                 </div>
             </div>
         </section>
