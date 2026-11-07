@@ -685,10 +685,21 @@ footer {
     .header-phone { padding: 7px 10px; font-size: 0.74rem; }
 }
 
+.service-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
 @media (max-width: 640px) {
     .header-inner { min-height: 64px; padding: 0 8px; gap: 6px; }
     .logo img { height: 52px; }
     .header-phone { display: none; }
+    .service-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
     .hero { padding-top: 80px; }
     .hero-actions { flex-direction: column; align-items: stretch; }
     .btn { width: 100%; }
